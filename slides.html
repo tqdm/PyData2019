@@ -13387,7 +13387,7 @@ iterable with <code>tqdm(iterable)</code>, and you're done!</p>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|██████████| 100/100 [00:01&lt;00:00, 96.82it/s]
+<pre>100%|██████████| 100/100 [00:01&lt;00:00, 97.05it/s]
 </pre>
 </div>
 </div>
@@ -13430,7 +13430,7 @@ iterable with <code>tqdm(iterable)</code>, and you're done!</p>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|██████████| 100/100 [00:01&lt;00:00, 96.60it/s]
+<pre>100%|██████████| 100/100 [00:01&lt;00:00, 96.91it/s]
 </pre>
 </div>
 </div>
@@ -13535,7 +13535,7 @@ iterable with <code>tqdm(iterable)</code>, and you're done!</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>75.2MB [00:00, 246MB/s]
+<pre>75.2MB [00:00, 236MB/s]
 9999999
 </pre>
 </div>
@@ -13567,7 +13567,7 @@ iterable with <code>tqdm(iterable)</code>, and you're done!</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre> 99%|██████████████████████████████████████▍| 75.2M/76.3M [00:00&lt;00:00, 234MB/s]
+<pre> 99%|██████████████████████████████████████▍| 75.2M/76.3M [00:00&lt;00:00, 245MB/s]
 9999999
 </pre>
 </div>
@@ -13732,7 +13732,7 @@ iterable with <code>tqdm(iterable)</code>, and you're done!</p>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>Processing d: 100%|██████████| 4/4 [00:01&lt;00:00,  3.93it/s]
+<pre>Processing d: 100%|██████████| 4/4 [00:01&lt;00:00,  3.94it/s]
 </pre>
 </div>
 </div>
@@ -14082,8 +14082,8 @@ on how to make a <strong>great</strong> progressbar, or</li>
 </li>
 <li>run this <a href="DEMO.ipynb">DEMO.ipynb</a> file!</li>
 </ul>
-<p><a href="https://mybinder.org/v2/gh/tqdm/tqdm/master?filepath=DEMO.ipynb"><img src="https://mybinder.org/badge_logo.svg" alt="binder-demo"></a>|<a href="https://notebooks.ai/demo/gh/tqdm/tqdm"><img src="https://img.shields.io/badge/launch-notebook-orange.svg?logo=jupyter" alt="notebook-demo"></a>
--|-</p>
+<p><a href="https://mybinder.org/v2/gh/tqdm/tqdm/master?filepath=DEMO.ipynb"><img src="https://mybinder.org/badge_logo.svg" alt="binder-demo"></a>
+<a href="https://notebooks.ai/demo/gh/tqdm/tqdm"><img src="https://img.shields.io/badge/launch-notebook-orange.svg?logo=jupyter" alt="notebook-demo"></a></p>
 
 </div>
 </div>
@@ -14186,7 +14186,7 @@ with the <code>desc</code> and <code>postfix</code> arguments:</p>
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">tqdm.auto</span> <span class="kn">import</span> <span class="n">trange</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">trange</span>
 <span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">trange</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;1st loop&#39;</span><span class="p">):</span>
@@ -14289,6 +14289,116 @@ a patchy connection).</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Machine-Learning">Machine Learning<a class="anchor-link" href="#Machine-Learning">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">tensorflow</span> <span class="kn">import</span> <span class="n">keras</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">Sequential</span><span class="p">()</span>
+
+<span class="c1"># ... etc ...</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Epoch 1/10
+1000/1000 [==============================] - 1s 1ms/step - loss: 123450.4777 - mean_absolute_error: 351.3478
+Epoch 2/10
+1000/1000 [==============================] - 0s 44us/step - loss: 122634.9961 - mean_absolute_error: 350.1859
+Epoch 3/10
+1000/1000 [==============================] - 0s 52us/step - loss: 121823.3951 - mean_absolute_error: 349.0256
+Epoch 4/10
+1000/1000 [==============================] - 0s 47us/step - loss: 121018.2029 - mean_absolute_error: 347.8706
+Epoch 5/10
+1000/1000 [==============================] - 0s 52us/step - loss: 120219.2435 - mean_absolute_error: 346.7207
+Epoch 6/10
+1000/1000 [==============================] - 0s 49us/step - loss: 119424.1497 - mean_absolute_error: 345.5727
+Epoch 7/10
+1000/1000 [==============================] - 0s 45us/step - loss: 118632.8348 - mean_absolute_error: 344.4263
+Epoch 8/10
+1000/1000 [==============================] - 0s 45us/step - loss: 117845.8773 - mean_absolute_error: 343.2822
+Epoch 9/10
+1000/1000 [==============================] - 0s 56us/step - loss: 117062.4701 - mean_absolute_error: 342.1397
+Epoch 10/10
+1000/1000 [==============================] - 0s 45us/step - loss: 116284.3545 - mean_absolute_error: 341.0009
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">with</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">total</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;epoch&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">t</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">cbk</span><span class="p">(</span><span class="n">epoch</span><span class="p">,</span> <span class="n">logs</span><span class="p">):</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">set_postfix</span><span class="p">(</span><span class="n">logs</span><span class="p">,</span> <span class="n">refresh</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>  <span class="c1"># don&#39;t force a refresh</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>  <span class="c1"># this may trigger a refresh</span>
+    <span class="n">cbkWrapped</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">LambdaCallback</span><span class="p">(</span><span class="n">on_epoch_end</span><span class="o">=</span><span class="n">cbk</span><span class="p">)</span>
+
+    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="n">t</span><span class="o">.</span><span class="n">total</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">cbkWrapped</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>100%|██████████| 10/10 [00:00&lt;00:00, 24.24epoch/s, loss=1.09e+5, mean_absolute_error=330]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Pandas-Integration">Pandas Integration<a class="anchor-link" href="#Pandas-Integration">&#182;</a></h3><p>Due to popular demand (ergh).</p>
 
 </div>
@@ -14296,7 +14406,7 @@ a patchy connection).</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
@@ -14337,7 +14447,7 @@ a patchy connection).</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -14522,116 +14632,6 @@ a patchy connection).</p>
 
 </div>
 </div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Machine-Learning">Machine Learning<a class="anchor-link" href="#Machine-Learning">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">tensorflow</span> <span class="kn">import</span> <span class="n">keras</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">Sequential</span><span class="p">()</span>
-
-<span class="c1"># ... etc ...</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">);</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch 1/10
-1000/1000 [==============================] - 1s 1ms/step - loss: 123483.2310 - mean_absolute_error: 351.3945
-Epoch 2/10
-1000/1000 [==============================] - 0s 48us/step - loss: 122667.6375 - mean_absolute_error: 350.2326
-Epoch 3/10
-1000/1000 [==============================] - 0s 46us/step - loss: 121855.9849 - mean_absolute_error: 349.0723
-Epoch 4/10
-1000/1000 [==============================] - 0s 51us/step - loss: 121050.5665 - mean_absolute_error: 347.9172
-Epoch 5/10
-1000/1000 [==============================] - 0s 46us/step - loss: 120250.0539 - mean_absolute_error: 346.7653
-Epoch 6/10
-1000/1000 [==============================] - 0s 53us/step - loss: 119454.5123 - mean_absolute_error: 345.6166
-Epoch 7/10
-1000/1000 [==============================] - 0s 56us/step - loss: 118663.1971 - mean_absolute_error: 344.4704
-Epoch 8/10
-1000/1000 [==============================] - 0s 45us/step - loss: 117875.6229 - mean_absolute_error: 343.3257
-Epoch 9/10
-1000/1000 [==============================] - 0s 46us/step - loss: 117092.5524 - mean_absolute_error: 342.1836
-Epoch 10/10
-1000/1000 [==============================] - 0s 46us/step - loss: 116312.7935 - mean_absolute_error: 341.0427
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">with</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">total</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;epoch&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">t</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">cbk</span><span class="p">(</span><span class="n">epoch</span><span class="p">,</span> <span class="n">logs</span><span class="p">):</span>
-        <span class="n">t</span><span class="o">.</span><span class="n">set_postfix</span><span class="p">(</span><span class="n">logs</span><span class="p">,</span> <span class="n">refresh</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>  <span class="c1"># don&#39;t force a refresh</span>
-        <span class="n">t</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>  <span class="c1"># this may trigger a refresh</span>
-    <span class="n">cbkWrapped</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">LambdaCallback</span><span class="p">(</span><span class="n">on_epoch_end</span><span class="o">=</span><span class="n">cbk</span><span class="p">)</span>
-
-    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="n">t</span><span class="o">.</span><span class="n">total</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">cbkWrapped</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|██████████| 10/10 [00:00&lt;00:00, 24.22epoch/s, loss=1.09e+5, mean_absolute_error=330]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
